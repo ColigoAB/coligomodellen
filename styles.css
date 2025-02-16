@@ -8,6 +8,16 @@ body {
     margin: 0;
 }
 
+.container {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+}
+
 .logo {
     position: absolute;
     top: 10px;
@@ -17,14 +27,6 @@ body {
 .logo img {
     width: 50px;
     height: auto;
-}
-
-.container {
-    background-color: #FFF;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
 }
 
 h1 {
@@ -75,5 +77,3 @@ button:hover {
     color: #061941;
     text-align: center;
 }
-
-
