@@ -4,8 +4,8 @@ function calculateScore() {
 
     // Define weights for each question
     const weights = {
-        question1: 10,
-        question2: 10
+        question1: 5,
+        question2: 5
     };
 
     // Calculate the total score
@@ -14,13 +14,13 @@ function calculateScore() {
     // Determine the response based on the score
     let resultText;
     if (totalScore <= 5) {
-        resultText = `Your total score is: ${totalScore}<br><br>Thank you for completing the survey!<br>We appreciate your feedback.`;
+        resultText = `Dina poäng är: ${totalScore}<br><br>Katastrof!<br>Här finns det mycket att åtgärda, kontakta oss snarast så hjälper vi dig upp på banan.`;
     } else if (totalScore <= 10) {
-        resultText = `Your total score is: ${totalScore}<br><br>Great job!<br>We value your input and will use it to improve.`;
+        resultText = `Dina poäng är: ${totalScore}<br><br>In och jobba!<br>Du är på god väg men det är långt kvar, hör av dig så hjälper vi dig!`;
     } else if (totalScore <= 15) {
-        resultText = `Your total score is: ${totalScore}<br><br>Excellent!<br>Your responses are very helpful to us.`;
+        resultText = `Dina poäng är: ${totalScore}<br><br>Helt okej!<br>Du ligger rätt bra till men det finns mer att göra. Hör av dig!.`;
     } else {
-        resultText = `Your total score is: ${totalScore}<br><br>Outstanding!<br>Thank you for your detailed feedback.`;
+        resultText = `Dina poäng är: ${totalScore}<br><br>Fantastiskt!<br>Du ligger väldigt bra till och det finns inte så mycket vi på Coligo kan göra, men däremot kan vi säkerligen hjälpa dig med andra områden.`;
     }
     // Display the result with line breaks
     document.getElementById('result').innerHTML = resultText;
