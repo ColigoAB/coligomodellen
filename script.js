@@ -15,14 +15,14 @@ function calculateScore() {
 
     // Determine the response based on the score
     let resultText;
-    if (totalScore <= 5) {
+    if (totalScore <= 15) {
         resultText = `Dina poäng är: ${totalScore}<br><br><strong>Katastrof!</strong> Här finns det mycket att åtgärda, kontakta oss snarast så hjälper vi dig upp på banan.`;
-    } else if (totalScore <= 10) {
-        resultText = `Dina poäng är: ${totalScore}<br><br><strong>In och jobba!</strong> Du är på god väg men det är långt kvar, hör av dig så hjälper vi dig!`;
-    } else if (totalScore <= 15) {
-        resultText = `Dina poäng är: ${totalScore}<br><br><strong>Helt okej!</strong> Du ligger rätt bra till men det finns mer att göra. Hör av dig!.`;
+    } else if (totalScore <= 30) {
+        resultText = `Dina poäng är: ${totalScore}<br><br><strong>Helt okej!</strong> Du är på god väg men det är långt kvar, hör av dig så hjälper vi dig!`;
+    } else if (totalScore <= 45) {
+        resultText = `Dina poäng är: ${totalScore}<br><br><strong>Riktigt bra!</strong> Du ligger rätt bra till men det finns mer att göra. Hör av dig!`;
     } else {
-        resultText = `Dina poäng är: ${totalScore}<br><br><strong>Fantastiskt!</strong> Du ligger väldigt bra till och det finns inte så mycket vi på Coligo kan göra, men däremot kan vi säkerligen hjälpa dig med andra områden.`;
+        resultText = `Dina poäng är: ${totalScore}<br><br><strong>Fantastiskt!</strong> Du ligger väldigt bra till men det finns säkerligen mer att göra. Hör av dig!`;
     }
     // Display the result with line breaks
     document.getElementById('result').innerHTML = resultText;
