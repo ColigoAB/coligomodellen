@@ -15,7 +15,7 @@ function calculateScore() {
 
     // Determine the response based on the score
     let resultText;
-    if (totalScore <= 15) {
+    if (totalScore <= 20) {
         //resultText = `Dina poäng är: ${totalScore}<br><br><strong>Katastrof!</strong> Här f.....`;
         resultText = `<strong>Katastrof!</strong> Här finns det mycket att åtgärda, hör av dig snarast så hjälper vi på Coligo dig upp på banan och in i framtiden.<br><br>Kontakta <strong>Andreas Stenhall</strong> via <a href="https://teams.microsoft.com/l/chat/0/0?users=andreas.stenhall@coligo.se">Teams</a>, <a href="mailto:andreas.stenhall@coligo.se">e-post</a> eller <a href="https://www.linkedin.com/in/andreasstenhall/" target="_blank">LinkedIn</a>. Andreas är Trusted Advisor på Coligo och Microsoft MVP på Windows i 16 år.`;
     } else if (totalScore <= 35) {
