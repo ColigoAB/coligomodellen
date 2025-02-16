@@ -11,7 +11,7 @@ function calculateScore() {
     };
 
     // Calculate the total score
-    const totalScore = (question1 * weights.question1) + (question2 * weights.question2);
+    const totalScore = (question1 * weights.question1) + (question2 * weights.question2) + (question3 * weights.question3);
 
     // Determine the response based on the score
     let resultText;
