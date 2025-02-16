@@ -64,3 +64,25 @@ button:hover {
     color: #061941;
     text-align: center;
 }
+
+.tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #252525;
+    color: #FFF;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    font-size: 12px;
+}
+
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
