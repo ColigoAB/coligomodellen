@@ -12,5 +12,5 @@ function calculateScore() {
     const totalScore = (question1 * weights.question1) + (question2 * weights.question2);
 
     // Display the result
-    document.getElementById('result').innerText = `Your total score is: ${totalScore}`;
+    document.getElementById('result').innerText = `Din poäng är: ${totalScore}<br>Poäng 0-20 är och sdasdad`;
 }
