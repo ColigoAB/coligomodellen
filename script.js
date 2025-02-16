@@ -11,6 +11,9 @@ function calculateScore() {
     // Calculate the total score
     const totalScore = (question1 * weights.question1) + (question2 * weights.question2);
 
-    // Display the result
-    document.getElementById('result').innerText = `Din poäng är: ${totalScore}<br>Poäng 0-20 är och sdasdad`;
+    // Create the result text with line breaks
+    const resultText = `Your total score is: ${totalScore}<br><br>Thank you for completing the survey!<br>We appreciate your feedback.`;
+
+    // Display the result with line breaks
+    document.getElementById('result').innerHTML = resultText;
 }
