@@ -65,6 +65,14 @@ button:hover {
     text-align: center;
 }
 
+.tooltip {
+    display: inline-block;
+    margin-left: 5px;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+}
+
 .tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
