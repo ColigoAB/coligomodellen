@@ -4,8 +4,8 @@ function calculateScore() {
 
     // Define weights for each question
     const weights = {
-        question1: 2,
-        question2: 3
+        question1: 10,
+        question2: 10
     };
 
     // Calculate the total score
