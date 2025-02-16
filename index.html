@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <h1>Survey</h1>
+    <form id="surveyForm">
+        <label for="question1">Question 1:</label>
+        <select id="question1" name="question1">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <br>
+        <label for="question2">Question 2:</label>
+        <select id="question2" name="question2">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+        <br>
+        <button type="button" onclick="calculateScore()">Submit</button>
+    </form>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
