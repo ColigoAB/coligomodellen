@@ -1,11 +1,13 @@
 function calculateScore() {
     const question1 = document.getElementById('question1').value;
     const question2 = document.getElementById('question2').value;
+    const question3 = document.getElementById('question3').value;
 
     // Define weights for each question
     const weights = {
         question1: 5,
-        question2: 5
+        question2: 5,
+        question3: 5
     };
 
     // Calculate the total score
