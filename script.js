@@ -17,7 +17,7 @@ function calculateScore() {
     let resultText;
     if (totalScore <= 15) {
         //resultText = `Dina poäng är: ${totalScore}<br><br><strong>Katastrof!</strong> Här f.....`;
-        resultText = `<br><strong>Katastrof!</strong> Här finns det mycket att åtgärda, hör av dig snarast så hjälper vi dig upp på banan och in i framtiden.<br><br>Kontakta mig via <a href="https://teams.microsoft.com/l/chat/0/0?users=andreas.stenhall@coligo.se">Teams</a> eller <a href="mailto:andreas.stenhall@coligo.se">e-post</a>. /<strong>Andreas Stenhall</strong>, Trusted Advisor på Coligo och Microsoft MVP på Windows i 16 år.`;
+        resultText = `<strong>Katastrof!</strong> Här finns det mycket att åtgärda, hör av dig snarast så hjälper vi dig upp på banan och in i framtiden.<br><br>Kontakta mig via <a href="https://teams.microsoft.com/l/chat/0/0?users=andreas.stenhall@coligo.se">Teams</a> eller <a href="mailto:andreas.stenhall@coligo.se">e-post</a>. /<strong>Andreas Stenhall</strong>, Trusted Advisor på Coligo och Microsoft MVP på Windows i 16 år.`;
     } else if (totalScore <= 35) {
         resultText = `<br><strong>Helt okej!</strong> Du är på god väg men det finns mycket att komma ikapp med, hör av dig så hjälper vi dig in i framtiden!<br><br>Kontakta mig via <a href="https://teams.microsoft.com/l/chat/0/0?users=andreas.stenhall@coligo.se">Teams</a> eller <a href="mailto:andreas.stenhall@coligo.se">e-post</a>. /<strong>Andreas Stenhall</strong>, Trusted Advisor på Coligo och Microsoft MVP på Windows i 16 år.`;
     } else if (totalScore <= 45) {
