@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mognadsgrad för samarbete med Microsoft 365-verktyg i din organisation</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="../coligo-logo.png" alt="Coligo">
+        </div>
+            
+        <h1>Mognadsgrad på samarbete med Microsoft 365-verktyg i din organisation</h1>
+        <form id="surveyForm">
+            <div class="form-group">
+                <label for="question1">Vad nyttjar en majoritet av era användare Teams till?</label>
+                <select id="question1" name="question1">
+                    <option value="0"></option>
+                    <option value="1">Använder inte Teams alls</option>
+                    <option value="2">Möten och chatt endast (+ möjligtvis en del ostrukturerat samarbete)</option>
+                    <option value="3">Möten, chatt och samarbete i olika Teams-team</option>
+                    <option value="4">Teams är vår primära (sam)arbetsyta för i princip allt!</option>                    
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question2">Vilken Copilot nyttjar ni?</label>
+                <select id="question2" name="question2">
+                    <option value="0"></option>
+                    <option value="1">Copilot är blockerat eller vi vet inte om eller hur det nyttjas</option>
+                    <option value="2">Microsoft 365 Copilot Chat nyttjas via webbläsaren</option>
+                    <option value="3">Microsoft 365 Copilot i Office-produkter nyttjas</option>
+                    <option value="4">Alla Copilots inklusive Studio, agenter och anpassade agenter nyttjas</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question3">Använder ni SharePoint för Intranätet?</label>
+                <select id="question3" name="question3">
+                    <option value="0"></option>
+                    <option value="1">Nej, inte alls</option>
+                    <option value="2">Ja, SharePoint Server on-prem</option>
+                    <option value="3">Ja, SharePoint Online</option>
+                    <option value="4">Ja, SharePoint Online + Viva Connections</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question4">Var lagras era personliga och gemensamma filer och dokument?</label>
+                <select id="question4" name="question4">
+                    <option value="0"></option>
+                    <option value="1">Endast on-prem</option>
+                    <option value="2">Både on-prem och i molnet men utan informationssäkerhet</option>
+                    <option value="3">Både on-prem och i molnet med informationsklassning som styrning</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="calculateScore()">Se resultatet</button>
+        </form>
+        <p id="result"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
